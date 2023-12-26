@@ -136,12 +136,29 @@ h6, strong {
 .especialidadesHt__medicos .btnFilters:hover svg path {
   fill: #333;
 }
+.especialidadesHt__medicos .btnCloseFilters {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3px 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.especialidadesHt__medicos .btnCloseFilters:hover {
+  border-color: #666;
+}
+.especialidadesHt__medicos .btnCloseFilters img {
+  position: relative;
+  top: -1px;
+}
 .especialidadesHt__medicos .colFilters__box {
   background-color: #fff;
   border: 1px solid #eaeade;
   color: #333;
   border-radius: 8px;
   padding: 10px;
+  position: relative;
 }
 .especialidadesHt__medicos .colFilters__box svg {
   width: 20px;
@@ -163,6 +180,13 @@ h6, strong {
   flex-direction: column;
   padding: 0 24px 24px 24px;
   margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+.especialidadesHt__medicos-box:hover {
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.especialidadesHt__medicos-box:hover figure img {
+  transform: scale(1.2);
 }
 .especialidadesHt__medicos-box span {
   background-color: #D6E9FF;
