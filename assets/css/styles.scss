@@ -80,6 +80,53 @@ h6, strong{
             }
         }
     }
+    &__detallemedico{
+        figure{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            img{
+                object-position: center;
+                width: 100%;
+            }
+        }
+        h1{
+            color: #002A6C;
+            font-size: 32px;
+        }
+        h3{
+            font-size: 24px;
+            font-family: 'AchsNuevaSerifRegular';
+        }
+        h4{
+            color: #787878;
+            font-family: 'AchsNuevaSansRegular';
+        }
+        ul{
+            li{
+                color: #348fff;
+                font-size: 17px;
+                font-family: 'AchsNuevaSansBold';
+                padding: 5px 0;
+            }
+        }
+        &-disclaimer{
+            img{
+                height: 26px;
+                width: 26px;
+                margin-right: 10px;
+            }
+            background-color: #f4f4ef;
+            border-radius: 8px;
+            color: #373737;
+            padding: 10px;
+            display: inline-block;
+            font-family: 'AchsNuevaSansRegular';
+            font-size: 14px;
+            width: 100%;
+        }
+    }
     &__equipo{
         background-color: #fff;
         z-index: 2;
@@ -108,10 +155,64 @@ h6, strong{
             }
         }
     }
+    &__formacion{
+        background-color: #EAF3FE;
+        h3{
+            color: #373737;
+            font-size: 24px;
+            font-family: 'AchsNuevaSerifRegular';
+        }
+        h6{
+            font-family: 'AchsNuevaSansRegular';
+            margin-bottom: 1rem;
+        }
+        h6, p{
+            color: #666;
+        }
+        figure{
+            background-color: #fff;
+            overflow: hidden;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 45px;
+                max-height: 42px;
+            }
+        }
+        p{
+            overflow: hidden;
+            &.collapse:not(.show){
+                display: block;
+                height: 50px;
+            }
+            &.collapsing{
+                height: auto;
+            }
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            color: #348FFF;
+            font-family: 'AchsNuevaSansBold';
+            text-decoration: underline;
+            &:hover{
+                color: #002A6C;
+            }
+        }
+    }
     &__medicos{
         background-color: #f9f9f5;
         position: relative;
         top: -80px;
+        h2{
+            color: #002A6C;
+            margin-bottom: 2rem;
+        }
         .btnFilters{
             background-color: #2B6BDC;
             border: 1px solid #2B6BDC;
@@ -179,6 +280,9 @@ h6, strong{
             }
         }
         &-box{
+            &.bg-grey{
+                background-color: #f9f9f5;
+            }
             background-color: #fff;
             border-radius: 24px;
             display: flex;
@@ -218,11 +322,104 @@ h6, strong{
                 color: #666;
                 font-family: 'AchsNuevaSansBold';
                 font-size: 18px;
+                margin-bottom: 0;
+            }
+            sub{
+                color: #2B6BDC;
+                bottom: 0;
+                display: block;
+                font-size: 14px;
+                line-height: initial;
+                margin-bottom: 10px;
+                font-family: 'AchsNuevaSansRegular';
             }
             p{
                 color: #787878;
                 font-size: 14px;
                 text-align: center;
+            }
+            &-btn{
+                background-color: #fff;
+                border: 2px solid #348FFF;
+                color: #348FFF;
+                font-family: 'AchsNuevaSansBold';
+                padding: 10px 32px;
+                border-radius: 50px;
+                text-decoration: none;
+                display: inline-block;
+                margin-top: 1rem;
+                &:hover{
+                    background-color: #348FFF;
+                    color: white;
+                }
+            }
+        }
+        .pagination{
+            li{
+                a{
+                    border: none;
+                    &.page-link-counter{
+                        background-color: #fff;
+                        margin: 0 4px;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 15px;
+                        color: #787878;
+                        &:hover,
+                        &.active{
+                            background-color: #DFF3F2;
+                            color: #348fff;
+                        }
+                    }
+                    &.page-link-back,
+                    &.page-link-next{
+                        background-color: #fff;
+                        border: 1px solid #c1c1c1;
+                        color: #c1c1c1;
+                        border-radius: 8px;
+                        padding: 10px 30px;
+                    }
+                    &.page-link-back{
+                        margin-right: 10px;
+                        svg{
+                            margin-right: 5px;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &.page-link-next{
+                        margin-left: 10px;
+                        svg{
+                            margin-left: 5px;
+                        }
+                    }
+                    svg{
+                        height: 20px;
+                        width: 20px;
+                        fill: #c1c1c1;
+                    }
+                }
+            }
+            li:not(.disabled){
+                a{
+                    &.page-link-back,
+                    &.page-link-next{
+                        background-color: #348fff;
+                        border: 1px solid #348fff;
+                        color: white;
+                        &:hover{
+                            background-color: #002A6C;
+                            border-color: #002A6C;
+                        }
+                    }
+                    svg{
+                        path{
+                            fill: white;
+                        }
+                    }
+                }
             }
         }
     }

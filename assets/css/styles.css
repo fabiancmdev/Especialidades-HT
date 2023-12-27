@@ -77,6 +77,50 @@ h6, strong {
 .especialidadesHt__banner-especialistas h1, .especialidadesHt__banner-especialistas p {
   color: #002A6C;
 }
+.especialidadesHt__detallemedico figure {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.especialidadesHt__detallemedico figure img {
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+.especialidadesHt__detallemedico h1 {
+  color: #002A6C;
+  font-size: 32px;
+}
+.especialidadesHt__detallemedico h3 {
+  font-size: 24px;
+  font-family: "AchsNuevaSerifRegular";
+}
+.especialidadesHt__detallemedico h4 {
+  color: #787878;
+  font-family: "AchsNuevaSansRegular";
+}
+.especialidadesHt__detallemedico ul li {
+  color: #348fff;
+  font-size: 17px;
+  font-family: "AchsNuevaSansBold";
+  padding: 5px 0;
+}
+.especialidadesHt__detallemedico-disclaimer {
+  background-color: #f4f4ef;
+  border-radius: 8px;
+  color: #373737;
+  padding: 10px;
+  display: inline-block;
+  font-family: "AchsNuevaSansRegular";
+  font-size: 14px;
+  width: 100%;
+}
+.especialidadesHt__detallemedico-disclaimer img {
+  height: 26px;
+  width: 26px;
+  margin-right: 10px;
+}
 .especialidadesHt__equipo {
   background-color: #fff;
   z-index: 2;
@@ -105,10 +149,64 @@ h6, strong {
   background-color: #348FFF;
   color: white;
 }
+.especialidadesHt__formacion {
+  background-color: #EAF3FE;
+}
+.especialidadesHt__formacion h3 {
+  color: #373737;
+  font-size: 24px;
+  font-family: "AchsNuevaSerifRegular";
+}
+.especialidadesHt__formacion h6 {
+  font-family: "AchsNuevaSansRegular";
+  margin-bottom: 1rem;
+}
+.especialidadesHt__formacion h6, .especialidadesHt__formacion p {
+  color: #666;
+}
+.especialidadesHt__formacion figure {
+  background-color: #fff;
+  overflow: hidden;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.especialidadesHt__formacion figure img {
+  max-width: 45px;
+  max-height: 42px;
+}
+.especialidadesHt__formacion p {
+  overflow: hidden;
+}
+.especialidadesHt__formacion p.collapse:not(.show) {
+  display: block;
+  height: 50px;
+}
+.especialidadesHt__formacion p.collapsing {
+  height: auto;
+}
+.especialidadesHt__formacion button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #348FFF;
+  font-family: "AchsNuevaSansBold";
+  text-decoration: underline;
+}
+.especialidadesHt__formacion button:hover {
+  color: #002A6C;
+}
 .especialidadesHt__medicos {
   background-color: #f9f9f5;
   position: relative;
   top: -80px;
+}
+.especialidadesHt__medicos h2 {
+  color: #002A6C;
+  margin-bottom: 2rem;
 }
 .especialidadesHt__medicos .btnFilters {
   background-color: #2B6BDC;
@@ -182,6 +280,9 @@ h6, strong {
   margin-bottom: 1.5rem;
   text-decoration: none;
 }
+.especialidadesHt__medicos-box.bg-grey {
+  background-color: #f9f9f5;
+}
 .especialidadesHt__medicos-box:hover {
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -212,11 +313,91 @@ h6, strong {
   color: #666;
   font-family: "AchsNuevaSansBold";
   font-size: 18px;
+  margin-bottom: 0;
+}
+.especialidadesHt__medicos-box sub {
+  color: #2B6BDC;
+  bottom: 0;
+  display: block;
+  font-size: 14px;
+  line-height: initial;
+  margin-bottom: 10px;
+  font-family: "AchsNuevaSansRegular";
 }
 .especialidadesHt__medicos-box p {
   color: #787878;
   font-size: 14px;
   text-align: center;
+}
+.especialidadesHt__medicos-box-btn {
+  background-color: #fff;
+  border: 2px solid #348FFF;
+  color: #348FFF;
+  font-family: "AchsNuevaSansBold";
+  padding: 10px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.especialidadesHt__medicos-box-btn:hover {
+  background-color: #348FFF;
+  color: white;
+}
+.especialidadesHt__medicos .pagination li a {
+  border: none;
+}
+.especialidadesHt__medicos .pagination li a.page-link-counter {
+  background-color: #fff;
+  margin: 0 4px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  color: #787878;
+}
+.especialidadesHt__medicos .pagination li a.page-link-counter:hover, .especialidadesHt__medicos .pagination li a.page-link-counter.active {
+  background-color: #DFF3F2;
+  color: #348fff;
+}
+.especialidadesHt__medicos .pagination li a.page-link-back, .especialidadesHt__medicos .pagination li a.page-link-next {
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  color: #c1c1c1;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+.especialidadesHt__medicos .pagination li a.page-link-back {
+  margin-right: 10px;
+}
+.especialidadesHt__medicos .pagination li a.page-link-back svg {
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+.especialidadesHt__medicos .pagination li a.page-link-next {
+  margin-left: 10px;
+}
+.especialidadesHt__medicos .pagination li a.page-link-next svg {
+  margin-left: 5px;
+}
+.especialidadesHt__medicos .pagination li a svg {
+  height: 20px;
+  width: 20px;
+  fill: #c1c1c1;
+}
+.especialidadesHt__medicos .pagination li:not(.disabled) a.page-link-back, .especialidadesHt__medicos .pagination li:not(.disabled) a.page-link-next {
+  background-color: #348fff;
+  border: 1px solid #348fff;
+  color: white;
+}
+.especialidadesHt__medicos .pagination li:not(.disabled) a.page-link-back:hover, .especialidadesHt__medicos .pagination li:not(.disabled) a.page-link-next:hover {
+  background-color: #002A6C;
+  border-color: #002A6C;
+}
+.especialidadesHt__medicos .pagination li:not(.disabled) a svg path {
+  fill: white;
 }
 .especialidadesHt__proced {
   background-color: #f9f9f5;
