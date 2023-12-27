@@ -36,19 +36,111 @@
                         </button>
                     </div>
                     <div id="colFilters" class="col-12 col-lg-3 d-none">
-                        <div class="colFilters__box">
-                            <button onclick="closeFilters()" class="btnCloseFilters d-block">
-                                <img src="assets/icons/icon-filters-closed.png" alt="">
-                            </button>
-                            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17.5">
-                                <path d="M19.38,7.5h-3.12v-.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H13.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h3.12c.34,0,.62-.28,.62-.62v-1.25c0-.34-.28-.62-.62-.62Z"/>
-                                <path d="M19.38,13.75H6.25v-.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H3.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h13.12c.34,0,.62-.28,.62-.62v-1.25c0-.34-.28-.62-.62-.62Z"/>
-                                <path d="M19.38,1.25H11.25V.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H8.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h8.12c.34,0,.62-.28,.62-.62V1.88c0-.34-.28-.62-.62-.62Z"/>
-                            </svg>
-                            <span>Filtros</span>
+                        <div class="colFilters__box pt-2">
                             <div class="row">
                                 <div class="col-12">
-                                    Filtros aplicados
+                                    <button onclick="closeFilters()" class="btnCloseFilters d-block">
+                                        <img src="assets/icons/icon-filters-closed.png" alt="">
+                                    </button>
+                                    <svg class="ms-3 me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17.5">
+                                        <path d="M19.38,7.5h-3.12v-.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H13.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h3.12c.34,0,.62-.28,.62-.62v-1.25c0-.34-.28-.62-.62-.62Z"/>
+                                        <path d="M19.38,13.75H6.25v-.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H3.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h13.12c.34,0,.62-.28,.62-.62v-1.25c0-.34-.28-.62-.62-.62Z"/>
+                                        <path d="M19.38,1.25H11.25V.62c0-.34-.28-.62-.62-.62h-1.25c-.34,0-.62,.28-.62,.62v.62H.62c-.34,0-.62,.28-.62,.62v1.25c0,.34,.28,.62,.62,.62H8.75v.62c0,.34,.28,.62,.62,.62h1.25c.34,0,.62-.28,.62-.62v-.62h8.12c.34,0,.62-.28,.62-.62V1.88c0-.34-.28-.62-.62-.62Z"/>
+                                    </svg>
+                                    <span>Filtros</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="filtersApplied p-3">
+                                        Filtros aplicados
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterStayOpen-collapseOne" aria-expanded="true" aria-controls="filterStayOpen-collapseOne">
+                                                    <img src="assets/icons/icon-search.png" alt="">
+                                                    Previsión
+                                                </button>
+                                            </h2>
+                                            <div id="filterStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Fonasa</label>
+                                                        <input class="form-check-input" type="checkbox" id="prevision1" value="option1">
+                                                    </div>
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Isapre</label>
+                                                        <input class="form-check-input" type="checkbox" id="prevision2" value="option1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterStayOpen-collapseTwo" aria-expanded="false" aria-controls="filterStayOpen-collapseTwo">
+                                                    <img src="assets/icons/icon-search.png" alt="">
+                                                    Convenio de salud
+                                                </button>
+                                            </h2>
+                                            <div id="filterStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Convenio 1</label>
+                                                        <input class="form-check-input" type="checkbox" id="convenio1" value="option1">
+                                                    </div>
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Convenio 2</label>
+                                                        <input class="form-check-input" type="checkbox" id="convenio2" value="option1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterStayOpen-collapseThree" aria-expanded="false" aria-controls="filterStayOpen-collapseThree">
+                                                    <img src="assets/icons/icon-document.png" alt="">
+                                                    Especialidad
+                                                </button>
+                                            </h2>
+                                            <div id="filterStayOpen-collapseThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Especialidad 1</label>
+                                                        <input class="form-check-input" type="checkbox" id="especialidad1" value="option1">
+                                                    </div>
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Especialidad 2</label>
+                                                        <input class="form-check-input" type="checkbox" id="especialidad2" value="option1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterStayOpen-collapseFour" aria-expanded="false" aria-controls="filterStayOpen-collapseFour">
+                                                    <img src="assets/icons/icon-manual.png" alt="">
+                                                    Modalidad
+                                                </button>
+                                            </h2>
+                                            <div id="filterStayOpen-collapseFour" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Presencial</label>
+                                                        <input class="form-check-input" type="checkbox" id="modalidad1" value="option1">
+                                                    </div>
+                                                    <div class="form-check form-check-inline w-100">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Online</label>
+                                                        <input class="form-check-input" type="checkbox" id="modalidad2" value="option1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

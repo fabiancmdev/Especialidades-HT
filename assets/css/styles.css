@@ -255,7 +255,6 @@ h6, strong {
   border: 1px solid #eaeade;
   color: #333;
   border-radius: 8px;
-  padding: 10px;
   position: relative;
 }
 .especialidadesHt__medicos .colFilters__box svg {
@@ -269,6 +268,47 @@ h6, strong {
 .especialidadesHt__medicos .colFilters__box span {
   font-family: "AchsNuevaSerifRegular";
   font-size: 22px;
+}
+.especialidadesHt__medicos .colFilters__box span.filtersApplied {
+  display: block;
+  font-family: "AchsNuevaSansRegular";
+  font-size: 17px;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item {
+  border: none;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item h2 {
+  margin-bottom: 0;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item h2 button {
+  color: #474747;
+  box-shadow: none;
+  font-family: "AchsNuevaSansBold";
+  padding: 10px 15px;
+  border-bottom: 1px solid #eaeade;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item h2 button[aria-expanded=true] {
+  background-color: transparent;
+  color: #002A6C;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item h2 button img {
+  margin-right: 10px;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item:last-child h2 button {
+  border-bottom: 1px solid transparent;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-item:last-child h2 button[aria-expanded=true] {
+  border-bottom: 1px solid #eaeade;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-body .form-check {
+  padding-left: 0;
+}
+.especialidadesHt__medicos .colFilters__box .accordion-body .form-check label {
+  color: #474747;
+  font-family: "AchsNuevaSansRegular";
+}
+.especialidadesHt__medicos .colFilters__box .accordion-body .form-check .form-check-input {
+  float: right;
 }
 .especialidadesHt__medicos-box {
   background-color: #fff;

@@ -263,7 +263,6 @@ h6, strong{
                 border: 1px solid #eaeade;
                 color: #333;
                 border-radius: 8px;
-                padding: 10px;
                 position: relative;
                 svg{
                     width: 20px;
@@ -276,6 +275,55 @@ h6, strong{
                 span{
                     font-family: 'AchsNuevaSerifRegular';
                     font-size: 22px;
+                    &.filtersApplied{
+                        display: block;
+                        font-family: 'AchsNuevaSansRegular';
+                        font-size: 17px;
+                    }
+                }
+                .accordion{
+                    &-item{
+                        border: none;
+                        h2{
+                            margin-bottom: 0;
+                            button{
+                                color: #474747;
+                                box-shadow: none;
+                                font-family: 'AchsNuevaSansBold';
+                                padding: 10px 15px;
+                                border-bottom: 1px solid #eaeade;
+                                &[aria-expanded="true"]{
+                                    background-color: transparent;
+                                    color: #002A6C;
+                                }
+                                img{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            h2{
+                                button{
+                                    border-bottom: 1px solid transparent;
+                                    &[aria-expanded="true"]{
+                                        border-bottom: 1px solid #eaeade;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-body{
+                        .form-check{
+                            padding-left: 0;
+                            label{
+                                color: #474747;
+                                font-family: 'AchsNuevaSansRegular';
+                            }
+                            .form-check-input {
+                                float: right;
+                            }
+                        }
+                    }
                 }
             }
         }
