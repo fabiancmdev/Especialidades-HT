@@ -63,6 +63,8 @@ h6, strong{
         }
         p{
             line-height: 30px;
+            position: relative;
+            z-index: 3;
         }
         img{
             position: absolute;

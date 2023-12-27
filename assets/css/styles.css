@@ -61,6 +61,8 @@ h6, strong {
 }
 .especialidadesHt__banner p {
   line-height: 30px;
+  position: relative;
+  z-index: 3;
 }
 .especialidadesHt__banner img {
   position: absolute;
