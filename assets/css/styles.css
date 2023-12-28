@@ -278,6 +278,7 @@ h6, strong {
 }
 .especialidadesHt__medicos .colFilters__box .accordion-item {
   border: none;
+  margin-top: 1.5rem;
 }
 .especialidadesHt__medicos .colFilters__box .accordion-item h2 {
   margin-bottom: 0;
@@ -456,9 +457,10 @@ h6, strong {
   border: none;
   color: #348FFF;
   font-family: "AchsNuevaSansBold";
+  text-decoration: underline;
 }
 .especialidadesHt__proced button:hover {
-  text-decoration: underline;
+  color: #002A6C;
 }
 .especialidadesHt__qpa {
   background-color: #f9f9f5;

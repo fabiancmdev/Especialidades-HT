@@ -286,6 +286,7 @@ h6, strong{
                 .accordion{
                     &-item{
                         border: none;
+                        margin-top: 1.5rem;
                         h2{
                             margin-bottom: 0;
                             button{
@@ -487,8 +488,9 @@ h6, strong{
             border: none;
             color: #348FFF;
             font-family: 'AchsNuevaSansBold';
+            text-decoration: underline;
             &:hover{
-                text-decoration: underline;
+                color: #002A6C;
             }
         }
     }
